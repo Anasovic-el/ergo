@@ -1,0 +1,138 @@
+:root {
+  --length-regular: 15px;
+  --length-double: calc(var(--length-regular) * 2);
+  --length-triple: calc(var(--length-regular) * 3);  
+  --length-moitie: calc(var(--length-regular) / 2);
+
+}
+body {
+  margin: 0;
+  height: auto;
+  background-image:url(../img/Background-website.jpg);
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#logo {
+  width: 10%;
+}
+
+span.accessible-hidden {
+  position: absolute;
+  left: -10000px;
+}
+
+button:hover span.accessible-hidden {
+	left: 50%;
+	margin-left: -50%;
+	top: 2.5em;
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+	font-size: 1em;
+	padding: 0.5em;
+	border-radius: 5px;
+}
+
+button img {
+  height: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: white;
+}
+
+h3 {
+  background-color: rgba(214, 69, 65, 1);
+  margin:0px;
+  color: white;
+  font-size: var(--length-double);
+  border-radius: 1rem 1rem 0 0;
+
+}
+
+ #content {
+  width: 100%;
+  background-color:rgba(214, 69, 65, 1);
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+#landing {
+  background: rgba(31, 58, 147, 1);
+}
+
+#landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#landing-image {
+  background: url(../img/vision.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+header {
+  padding: 3%;
+  text-align: center;
+  background:   rgb(0,0,139);
+  color: #fff;}
+
+header ul{
+  margin:0;
+  padding:0;}
+
+header a{
+  color: white;
+  text-decoration:none;
+  font-size:2rem;}
+
+header li{
+  padding: 0 15px 0 15px;
+  list-style-type: none; }
+
+header a:hover{
+  color:rgba(214, 69, 65, 1);
+  font-weight:bold;}
+
+.box {
+  padding: 0.8rem;
+  margin: 2rem 0 0;
+  border-radius: 1rem 1rem 0 0;
+  text-align: center;
+  background:rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+footer{
+  grid-area: footer;
+  padding:3px;
+  margin-top:20px;
+  color:#fff;
+  background:   rgb(0,0,139);
+  text-align: center;}
+
